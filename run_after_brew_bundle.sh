@@ -30,13 +30,14 @@ fail() {
 
 ########
 
-check_brew() {
-info 'Setting up your Mac...'
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+install_brews() {
+info 'Installing brews...'
+brew bundle  
+success 'Done!'
 }
 
 
-check_brew
+install_brews
 
 
 echo ''

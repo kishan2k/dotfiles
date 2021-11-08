@@ -5,13 +5,13 @@
 
 
 
-run `chezmoi edit-config`
+run `./bin/chezmoi edit-config`
 and enter this:
 ```
 mode = "symlink"
 [data]
     email = "kishan+git@ambasana.me"
-    name = "Kishan"
+    name = "Kishan"    
 [git]
     autoCommit = true
     autoPush = true
