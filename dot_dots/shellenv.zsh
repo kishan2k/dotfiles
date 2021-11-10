@@ -1,8 +1,8 @@
+# /usr/local/bin/zsh
+
 export MYCODE=~/Code
 
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

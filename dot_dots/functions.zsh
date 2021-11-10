@@ -1,4 +1,9 @@
-#!/usr/bin/env bash
+#/usr/local/bin/zsh
+
+
+
+# ======
+
 
 # Create a new directory and enter it
 function mkd() {
@@ -7,12 +12,10 @@ function mkd() {
 
 
 
-
 functiom wifi_password() {
 	security find-generic-password -D "AirPort network password" -a "$@" -gw
 }
 
-#----
 
 # Change working directory to the top-most Finder window location
 function cdf() { # short for `cdfinder`
@@ -118,6 +121,13 @@ function gz() {
 # Run `dig` and display the most useful info
 function digga() {
 	dig +nocmd "$1" any +multiline +noall +answer;
+}
+
+
+
+# time zsh 
+function timezsh() {
+	for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done
 }
 
 # Show all the names (CNs and SANs) listed in the SSL certificate

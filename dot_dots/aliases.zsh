@@ -1,13 +1,14 @@
-#!/bin/zsh
+#/usr/local/bin/zsh
+
+alias zshreload="source ~/.zshrc"
 
 # Shortcuts
-alias reloadshell="source $HOME/.zshrc"
 alias c="clear"
 alias e="exit"
 
 # Tools
 alias cm="chezmoi"
-alias f="fuck -r"
+alias pip="pip3"
 
 # Directories
 alias library="cd $HOME/Library"

@@ -4,7 +4,6 @@ antigen use oh-my-zsh
 # Load bundles from the default repo (oh-my-zsh)
 antigen bundle git
 antigen bundle z
-antigen bundle bundler
 antigen bundle dotenv
 antigen bundle macos
 antigen bundle history
@@ -13,8 +12,9 @@ antigen bundle history
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
-
+antigen bundle mroth/evalcache
 antigen bundle Aloxaf/fzf-tab
+antigen bundle lukechilds/zsh-nvm
 
 
 # Select theme
