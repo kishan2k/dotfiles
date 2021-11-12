@@ -16,13 +16,19 @@ function cr-prod() {
 }
 
 function vpy() {
-	eval $( pyenv init - )
-	eval $( pyenv virtualenv-init - )
-	pyenv virtualenv $2 pyenv-$1 && source activate pyenv-$1 || source activate pyenv-$1
+	_evalcache pyenv init
+	_evalcache pyenv virtualenv-init
+	pyenv virtualenv $2 pyenv-$1 && pyenv activate pyenv-$1 || pyenv activate pyenv-$1
+}
+
+function vpy-on() {
+	_evalcache pyenv init
+	_evalcache pyenv virtualenv-init
+	pyenv activate pyenv-$1
 }
 
 function vpy-off() {
-	source deactivate pyenv-$1
+	pyenv deactivate pyenv-$1
 }
 
 
