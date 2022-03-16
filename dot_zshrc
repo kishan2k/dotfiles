@@ -31,3 +31,6 @@ antigen init ~/.dots/.antigenrc
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+export PNPM_HOME="/Users/kishan/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
