@@ -116,7 +116,7 @@ sudo pmset -b sleep 5
 info "Screen Related"
 
 # Re-enable subpixel antialiasing
-defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
+# defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
@@ -130,7 +130,7 @@ defaults write com.apple.screencapture type -string "png"
 
 # Enable subpixel font rendering on non-Apple LCDs
 # Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
-defaults write NSGlobalDomain AppleFontSmoothing -int 1
+# defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 
 ###############################################################################
@@ -207,9 +207,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 info "Dock & Dashboard"
 
 defaults write com.apple.dock "show-recents" -boolean false
-defaults write com.apple.dock "autohide" -boolean true
-defaults write com.apple.dock "autohide-delay" -float 0.0
-defaults write com.apple.dock "autohide-time-modifier" -float 0.15000000596046448
+# defaults write com.apple.dock "autohide" -boolean true
+# defaults write com.apple.dock "autohide-delay" -float 0.0
+# defaults write com.apple.dock "autohide-time-modifier" -float 0.15000000596046448
 defaults write com.apple.dock "enable-spring-load-actions-on-all-items" -boolean false
 defaults write com.apple.dock "expose-group-apps" -boolean false
 defaults write com.apple.dock "largesize" -float 128
