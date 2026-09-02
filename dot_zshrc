@@ -21,5 +21,19 @@ antigen init ~/.dots/.antigenrc
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export BB_REPO_PATH="/Users/kishan.ambasana/Code/"
+
 export PNPM_HOME="/Users/kishan/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+export PATH="$PNPM_HOME:$PATH:/Users/kishan.ambasana/Code/dev-scripts"
+
+# Added by Antigravity
+export PATH="/Users/kishan.ambasana/.antigravity/antigravity/bin:$PATH"
+
+# PHP 7.4 (required for mercury-platform-campaign-taboola)
+export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
+
+# Added by codebase-memory-mcp install
+export PATH="/Users/kishan.ambasana/.local/bin:$PATH"
+
+# GITHUB_MCP_PAT moved to ~/.zshenv (needed by non-interactive/GUI-launched shells)

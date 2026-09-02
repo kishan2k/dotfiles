@@ -1,0 +1,4 @@
+# GitHub MCP server (api.githubcopilot.com needs a bearer token; no OAuth DCR support).
+# Lives in .zshenv, not .zshrc, so non-interactive and GUI-launched shells (Orca ->
+# claude) get it too. Absolute gh path: PATH has no homebrew yet at .zshenv time.
+[ -n "$GITHUB_MCP_PAT" ] || export GITHUB_MCP_PAT="$(/opt/homebrew/bin/gh auth token 2>/dev/null)"
